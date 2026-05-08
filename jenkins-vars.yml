@@ -1,0 +1,23 @@
+---
+
+# jenkins variables
+project_name: docker-ci-debug
+external_type: os
+release_type: stable
+release_tag: latest
+ls_branch: master
+build_armhf: false
+repo_vars:
+  - BUILD_VERSION_ARG = 'CI_VERSION'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-ci-debug'
+  - CONTAINER_NAME = 'ci-debug'
+  - DOCKERHUB_IMAGE = 'linuxserver/ci-debug'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/ci-debug'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/ci-debug'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH = 'false'
+  - CI = 'true'
+  - CI_WEB = 'false'
+  - CI_DELAY = '120'
+  - CI_DOCKERENV = 'TZ=US/Pacific'
