@@ -9,6 +9,7 @@ LABEL maintainer="thelamer"
 RUN \
   echo "**** test install ****" && \
   apk add --no-cache \
+    nginx \
     vim && \
   echo "**** cleanup ****" && \
   rm -rf \
